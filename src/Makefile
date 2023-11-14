@@ -3716,8 +3716,8 @@ CPP = clang -E
 CPPFLAGS = 
 CSCOPE = cscope
 CTAGS = ctags
-CXX = clang++ -std=c++20
-CXXCPP = clang++ -std=c++20 -E
+CXX = clang++ -std=c++17
+CXXCPP = clang++ -std=c++17 -E
 CXXDEPMODE = depmode=gcc3
 CXXFLAGS = 
 CYGPATH_W = echo
@@ -3754,8 +3754,8 @@ HARDENED_CPPFLAGS =
 HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
 HARDENED_LDFLAGS =  -Wl,-bind_at_load
 HAVE_BUILTIN_PREFETCH = 1
-HAVE_CXX17 = 
-HAVE_CXX20 = 1
+HAVE_CXX17 = 1
+HAVE_CXX20 = 
 HAVE_EVHTTP_CONNECTION_GET_PEER_CONST_CHAR = 
 HAVE_FDATASYNC = 0
 HAVE_FULLFSYNC = 1
@@ -3806,7 +3806,7 @@ NM = nm
 NMEDIT = nmedit
 NOWARN_CXXFLAGS =  -Wno-unused-parameter -Wno-self-assign -Wno-deprecated-copy
 OBJCOPY = 
-OBJCXX = clang++ -std=c++20
+OBJCXX = clang++ -std=c++17
 OBJCXXDEPMODE = depmode=gcc3
 OBJCXXFLAGS = 
 OBJDUMP = objdump
@@ -3828,7 +3828,7 @@ PKG_CONFIG_LIBDIR =
 PKG_CONFIG_PATH = 
 PTHREAD_CC = clang
 PTHREAD_CFLAGS = -pthread
-PTHREAD_CXX = clang++ -std=c++20
+PTHREAD_CXX = clang++ -std=c++17
 PTHREAD_LIBS = -lpthread
 PYTHON = /Users/guinengni/.nix-profile/bin/python3.11
 PYTHONPATH = 
