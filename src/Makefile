@@ -140,8 +140,8 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-build_triplet = aarch64-apple-darwin23.2.0
-host_triplet = aarch64-apple-darwin23.2.0
+build_triplet = aarch64-apple-darwin23.3.0
+host_triplet = aarch64-apple-darwin23.3.0
 bin_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2) $(am__EXEEXT_3) \
 	$(am__EXEEXT_4) $(am__EXEEXT_5) $(am__EXEEXT_6) \
 	$(am__EXEEXT_7) $(am__EXEEXT_8) $(am__EXEEXT_9) \
@@ -157,13 +157,13 @@ am__append_5 = bitcoind
 #am__append_6 = bitcoin-node
 am__append_7 = bitcoin-cli
 am__append_8 = bitcoin-tx
-#am__append_9 = bitcoin-wallet
+am__append_9 = bitcoin-wallet
 am__append_10 = bitcoin-util
 #am__append_11 = bitcoin-chainstate
-#am__append_12 = wallet/init.cpp
-#am__append_13 = $(BDB_CPPFLAGS)
-am__append_14 = dummywallet.cpp
-#am__append_15 = wallet/sqlite.cpp
+am__append_12 = wallet/init.cpp
+am__append_13 = $(BDB_CPPFLAGS)
+#am__append_14 = dummywallet.cpp
+am__append_15 = wallet/sqlite.cpp
 #am__append_16 = wallet/bdb.cpp wallet/salvage.cpp
 #am__append_17 = crypto/sha256_sse4.cpp
 am__append_18 = $(EVENT_CFLAGS)
@@ -203,78 +203,78 @@ am__append_44 = -DLEVELDB_IS_BIG_ENDIAN=0
 am__append_46 = -DLEVELDB_PLATFORM_POSIX
 #am__append_47 = leveldb/util/env_windows.cc
 am__append_48 = leveldb/util/env_posix.cc
-#am__append_49 = wallet/test/util.h
-#am__append_50 = wallet/test/util.cpp
+am__append_49 = wallet/test/util.h
+am__append_50 = wallet/test/util.cpp
 am__append_51 = test/fuzz/fuzz
 #am__append_52 = test/test_bitcoin
 #am__append_53 = $(MINIUPNPC_LIBS)
 #am__append_54 = $(NATPMP_LIBS)
-#am__append_55 = \
-#  wallet/test/feebumper_tests.cpp \
-#  wallet/test/psbt_wallet_tests.cpp \
-#  wallet/test/spend_tests.cpp \
-#  wallet/test/wallet_tests.cpp \
-#  wallet/test/walletdb_tests.cpp \
-#  wallet/test/wallet_crypto_tests.cpp \
-#  wallet/test/wallet_transaction_tests.cpp \
-#  wallet/test/coinselector_tests.cpp \
-#  wallet/test/init_tests.cpp \
-#  wallet/test/ismine_tests.cpp \
-#  wallet/test/rpc_util_tests.cpp \
-#  wallet/test/scriptpubkeyman_tests.cpp \
-#  wallet/test/walletload_tests.cpp \
-#  wallet/test/group_outputs_tests.cpp
+am__append_55 = \
+  wallet/test/feebumper_tests.cpp \
+  wallet/test/psbt_wallet_tests.cpp \
+  wallet/test/spend_tests.cpp \
+  wallet/test/wallet_tests.cpp \
+  wallet/test/walletdb_tests.cpp \
+  wallet/test/wallet_crypto_tests.cpp \
+  wallet/test/wallet_transaction_tests.cpp \
+  wallet/test/coinselector_tests.cpp \
+  wallet/test/init_tests.cpp \
+  wallet/test/ismine_tests.cpp \
+  wallet/test/rpc_util_tests.cpp \
+  wallet/test/scriptpubkeyman_tests.cpp \
+  wallet/test/walletload_tests.cpp \
+  wallet/test/group_outputs_tests.cpp
 
-#am__append_56 = \
-# $(SQLITE_LIBS) \
-# $(BDB_LIBS)
+am__append_56 = \
+ $(SQLITE_LIBS) \
+ $(BDB_LIBS)
 
-##am__append_57 = wallet/test/db_tests.cpp
-##am__append_58 = \
-## wallet/test/fuzz/notifications.cpp
+#am__append_57 = wallet/test/db_tests.cpp
+am__append_58 = \
+ wallet/test/fuzz/notifications.cpp
 
-#am__append_59 = \
-#  wallet/test/wallet_test_fixture.cpp \
-#  wallet/test/wallet_test_fixture.h \
-#  wallet/test/init_test_fixture.cpp \
-#  wallet/test/init_test_fixture.h
+am__append_59 = \
+  wallet/test/wallet_test_fixture.cpp \
+  wallet/test/wallet_test_fixture.h \
+  wallet/test/init_test_fixture.cpp \
+  wallet/test/init_test_fixture.h
 
-#am__append_60 = $(LIBBITCOIN_WALLET)
-#am__append_61 = $(BDB_CPPFLAGS)
+am__append_60 = $(LIBBITCOIN_WALLET)
+am__append_61 = $(BDB_CPPFLAGS)
 #am__append_62 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_63 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_64 = $(UNIVALUE_TESTS)
 #am__append_65 = $(UNIVALUE_TESTS)
 #am__append_66 = bench/bench_bitcoin
 ##am__append_67 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
-##am__append_68 = bench/coin_selection.cpp \
-##	bench/wallet_balance.cpp \
-##	bench/wallet_loading.cpp \
-##	bench/wallet_create_tx.cpp
-##am__append_69 = $(BDB_LIBS) $(SQLITE_LIBS)
+#am__append_68 = bench/coin_selection.cpp \
+#	bench/wallet_balance.cpp \
+#	bench/wallet_loading.cpp \
+#	bench/wallet_create_tx.cpp
+#am__append_69 = $(BDB_LIBS) $(SQLITE_LIBS)
 #am__append_70 = $(CLEAN_BITCOIN_BENCH)
 #am__append_71 = qt/bitcoin-qt
 ##am__append_72 = bitcoin-gui
 #am__append_73 = qt/libbitcoinqt.a
 ##am__append_74 = $(BITCOIN_QT_WINDOWS_CPP)
-##am__append_75 = $(BITCOIN_QT_WALLET_CPP)
+#am__append_75 = $(BITCOIN_QT_WALLET_CPP)
 #am__append_76 = $(BITCOIN_MM)
 ##am__append_77 = $(BITCOIN_QT_RC)
-##am__append_78 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+#am__append_78 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 ##am__append_79 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_80 = $(CLEAN_QT)
 #am__append_81 = qt/test/test_bitcoin-qt
 #am__append_82 = qt/test/test_bitcoin-qt
-##am__append_83 = \
-##  qt/test/moc_addressbooktests.cpp \
-##  qt/test/moc_wallettests.cpp
+#am__append_83 = \
+#  qt/test/moc_addressbooktests.cpp \
+#  qt/test/moc_wallettests.cpp
 
-##am__append_84 = \
-##  qt/test/addressbooktests.cpp \
-##  qt/test/wallettests.cpp \
-##  wallet/test/wallet_test_fixture.cpp
+#am__append_84 = \
+#  qt/test/addressbooktests.cpp \
+#  qt/test/wallettests.cpp \
+#  wallet/test/wallet_test_fixture.cpp
 
-##am__append_85 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
+#am__append_85 = $(LIBBITCOIN_UTIL) $(LIBBITCOIN_WALLET)
 ##am__append_86 = $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 #am__append_87 = $(CLEAN_BITCOIN_QT_TEST)
 subdir = src
@@ -311,7 +311,7 @@ am__EXEEXT_1 = bitcoind$(EXEEXT)
 #am__EXEEXT_2 = bitcoin-node$(EXEEXT)
 am__EXEEXT_3 = bitcoin-cli$(EXEEXT)
 am__EXEEXT_4 = bitcoin-tx$(EXEEXT)
-#am__EXEEXT_5 = bitcoin-wallet$(EXEEXT)
+am__EXEEXT_5 = bitcoin-wallet$(EXEEXT)
 am__EXEEXT_6 = bitcoin-util$(EXEEXT)
 #am__EXEEXT_7 =  \
 #	bitcoin-chainstate$(EXEEXT)
@@ -645,10 +645,10 @@ am__libbitcoin_node_a_SOURCES_DIST = addrdb.cpp addrman.cpp banman.cpp \
 	warnings.h zmq/zmqabstractnotifier.h \
 	zmq/zmqnotificationinterface.h zmq/zmqpublishnotifier.h \
 	zmq/zmqrpc.h zmq/zmqutil.h wallet/init.cpp dummywallet.cpp
-#am__objects_8 =  \
-#	wallet/libbitcoin_node_a-init.$(OBJEXT)
-am__objects_9 =  \
-	libbitcoin_node_a-dummywallet.$(OBJEXT)
+am__objects_8 =  \
+	wallet/libbitcoin_node_a-init.$(OBJEXT)
+#am__objects_9 =  \
+#	libbitcoin_node_a-dummywallet.$(OBJEXT)
 am_libbitcoin_node_a_OBJECTS = libbitcoin_node_a-addrdb.$(OBJEXT) \
 	libbitcoin_node_a-addrman.$(OBJEXT) \
 	libbitcoin_node_a-banman.$(OBJEXT) \
@@ -863,8 +863,8 @@ am__libbitcoin_wallet_a_SOURCES_DIST = wallet/coincontrol.cpp \
 	zmq/zmqnotificationinterface.h zmq/zmqpublishnotifier.h \
 	zmq/zmqrpc.h zmq/zmqutil.h wallet/sqlite.cpp wallet/bdb.cpp \
 	wallet/salvage.cpp
-#am__objects_10 =  \
-#	wallet/libbitcoin_wallet_a-sqlite.$(OBJEXT)
+am__objects_10 =  \
+	wallet/libbitcoin_wallet_a-sqlite.$(OBJEXT)
 #am__objects_11 =  \
 #	wallet/libbitcoin_wallet_a-bdb.$(OBJEXT) \
 #	wallet/libbitcoin_wallet_a-salvage.$(OBJEXT)
@@ -938,8 +938,8 @@ am__libtest_util_a_SOURCES_DIST = test/util/blockfilter.cpp \
 	test/util/transaction_utils.h test/util/txmempool.h \
 	test/util/validation.h test/util/xoroshiro128plusplus.h \
 	wallet/test/util.h
-#am__objects_12 =  \
-#	wallet/test/libtest_util_a-util.$(OBJEXT)
+am__objects_12 =  \
+	wallet/test/libtest_util_a-util.$(OBJEXT)
 am__objects_13 = $(am__objects_1)
 am_libtest_util_a_OBJECTS =  \
 	test/util/libtest_util_a-blockfilter.$(OBJEXT) \
@@ -1200,8 +1200,8 @@ am__qt_libbitcoinqt_a_SOURCES_DIST = qt/bantablemodel.cpp \
 #	qt/libbitcoinqt_a-walletmodel.$(OBJEXT) \
 #	qt/libbitcoinqt_a-walletmodeltransaction.$(OBJEXT) \
 #	qt/libbitcoinqt_a-walletview.$(OBJEXT)
-##am__objects_21 =  \
-##	$(am__objects_20)
+#am__objects_21 =  \
+#	$(am__objects_20)
 #am__objects_22 = $(am__objects_17) $(am__objects_19) \
 #	$(am__objects_21)
 #am__objects_23 = qt/libbitcoinqt_a-macdockiconhandler.$(OBJEXT) \
@@ -1703,10 +1703,10 @@ am__bench_bench_bitcoin_SOURCES_DIST = bench/data/block413567.raw \
 	bench/util_time.cpp bench/verify_script.cpp \
 	bench/coin_selection.cpp bench/wallet_balance.cpp \
 	bench/wallet_loading.cpp bench/wallet_create_tx.cpp
-##am__objects_35 = bench/bench_bitcoin-coin_selection.$(OBJEXT) \
-##	bench/bench_bitcoin-wallet_balance.$(OBJEXT) \
-##	bench/bench_bitcoin-wallet_loading.$(OBJEXT) \
-##	bench/bench_bitcoin-wallet_create_tx.$(OBJEXT)
+#am__objects_35 = bench/bench_bitcoin-coin_selection.$(OBJEXT) \
+#	bench/bench_bitcoin-wallet_balance.$(OBJEXT) \
+#	bench/bench_bitcoin-wallet_loading.$(OBJEXT) \
+#	bench/bench_bitcoin-wallet_create_tx.$(OBJEXT)
 #am_bench_bench_bitcoin_OBJECTS = $(am__objects_1) \
 #	bench/bench_bitcoin-addrman.$(OBJEXT) \
 #	bench/bench_bitcoin-base58.$(OBJEXT) \
@@ -1752,9 +1752,9 @@ am__DEPENDENCIES_1 =
 ##am__DEPENDENCIES_2 =  \
 ##	$(LIBBITCOIN_ZMQ) \
 ##	$(am__DEPENDENCIES_1)
-##am__DEPENDENCIES_3 =  \
-##	$(am__DEPENDENCIES_1) \
-##	$(am__DEPENDENCIES_1)
+#am__DEPENDENCIES_3 =  \
+#	$(am__DEPENDENCIES_1) \
+#	$(am__DEPENDENCIES_1)
 #bench_bench_bitcoin_DEPENDENCIES = $(LIBTEST_UTIL) \
 #	$(LIBBITCOIN_NODE) $(LIBBITCOIN_WALLET) \
 #	$(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) \
@@ -1915,9 +1915,9 @@ am__qt_test_test_bitcoin_qt_SOURCES_DIST = init/bitcoin-qt.cpp \
 	qt/test/uritests.h qt/test/util.h qt/test/wallettests.h \
 	qt/test/addressbooktests.cpp qt/test/wallettests.cpp \
 	wallet/test/wallet_test_fixture.cpp
-##am__objects_49 = qt/test/test_bitcoin_qt-addressbooktests.$(OBJEXT) \
-##	qt/test/test_bitcoin_qt-wallettests.$(OBJEXT) \
-##	wallet/test/qt_test_test_bitcoin_qt-wallet_test_fixture.$(OBJEXT)
+#am__objects_49 = qt/test/test_bitcoin_qt-addressbooktests.$(OBJEXT) \
+#	qt/test/test_bitcoin_qt-wallettests.$(OBJEXT) \
+#	wallet/test/qt_test_test_bitcoin_qt-wallet_test_fixture.$(OBJEXT)
 #am_qt_test_test_bitcoin_qt_OBJECTS = init/qt_test_test_bitcoin_qt-bitcoin-qt.$(OBJEXT) \
 #	qt/test/test_bitcoin_qt-apptests.$(OBJEXT) \
 #	qt/test/test_bitcoin_qt-optiontests.$(OBJEXT) \
@@ -1926,8 +1926,8 @@ am__qt_test_test_bitcoin_qt_SOURCES_DIST = init/bitcoin-qt.cpp \
 #	qt/test/test_bitcoin_qt-uritests.$(OBJEXT) \
 #	qt/test/test_bitcoin_qt-util.$(OBJEXT) \
 #	$(am__objects_1) $(am__objects_49)
-##am__objects_50 = qt/test/test_bitcoin_qt-moc_addressbooktests.$(OBJEXT) \
-##	qt/test/test_bitcoin_qt-moc_wallettests.$(OBJEXT)
+#am__objects_50 = qt/test/test_bitcoin_qt-moc_addressbooktests.$(OBJEXT) \
+#	qt/test/test_bitcoin_qt-moc_wallettests.$(OBJEXT)
 #am__objects_51 = qt/test/test_bitcoin_qt-moc_apptests.$(OBJEXT) \
 #	qt/test/test_bitcoin_qt-moc_optiontests.$(OBJEXT) \
 #	qt/test/test_bitcoin_qt-moc_rpcnestedtests.$(OBJEXT) \
@@ -2029,10 +2029,10 @@ am__test_fuzz_fuzz_SOURCES_DIST = wallet/test/fuzz/coinselection.cpp \
 	test/fuzz/utxo_snapshot.cpp \
 	test/fuzz/validation_load_mempool.cpp \
 	test/fuzz/versionbits.cpp
-##am__objects_52 = wallet/test/fuzz/test_fuzz_fuzz-notifications.$(OBJEXT)
-#am__objects_53 = wallet/test/fuzz/test_fuzz_fuzz-coinselection.$(OBJEXT) \
-#	wallet/test/fuzz/test_fuzz_fuzz-parse_iso8601.$(OBJEXT) \
-#	$(am__objects_52)
+am__objects_52 = wallet/test/fuzz/test_fuzz_fuzz-notifications.$(OBJEXT)
+am__objects_53 = wallet/test/fuzz/test_fuzz_fuzz-coinselection.$(OBJEXT) \
+	wallet/test/fuzz/test_fuzz_fuzz-parse_iso8601.$(OBJEXT) \
+	$(am__objects_52)
 am_test_fuzz_fuzz_OBJECTS =  \
 	$(am__objects_53) \
 	test/fuzz/fuzz-addition_overflow.$(OBJEXT) \
@@ -2148,8 +2148,8 @@ am_test_fuzz_fuzz_OBJECTS =  \
 test_fuzz_fuzz_OBJECTS = $(am_test_fuzz_fuzz_OBJECTS)
 #am__DEPENDENCIES_8 = $(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_9 = $(am__DEPENDENCIES_1)
-#am__DEPENDENCIES_10 = $(am__DEPENDENCIES_1) \
-#	$(am__DEPENDENCIES_1)
+am__DEPENDENCIES_10 = $(am__DEPENDENCIES_1) \
+	$(am__DEPENDENCIES_1)
 #am__DEPENDENCIES_11 = $(LIBBITCOIN_ZMQ) \
 #	$(am__DEPENDENCIES_1)
 am__DEPENDENCIES_12 = $(LIBTEST_UTIL) $(LIBTEST_FUZZ) \
@@ -2246,25 +2246,25 @@ am__test_test_bitcoin_SOURCES_DIST = test/main.cpp \
 	test/data/key_io_invalid.json test/data/sighash.json \
 	test/data/tx_invalid.json test/data/tx_valid.json \
 	test/data/asmap.raw
-#am__objects_54 = wallet/test/test_test_bitcoin-wallet_test_fixture.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-init_test_fixture.$(OBJEXT)
+am__objects_54 = wallet/test/test_test_bitcoin-wallet_test_fixture.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-init_test_fixture.$(OBJEXT)
 am__objects_55 = test/test_bitcoin-main.$(OBJEXT) $(am__objects_13) \
 	$(am__objects_54)
-#am__objects_56 = wallet/test/test_test_bitcoin-feebumper_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-psbt_wallet_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-spend_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-wallet_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-walletdb_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-wallet_crypto_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-wallet_transaction_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-coinselector_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-init_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-ismine_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-rpc_util_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-scriptpubkeyman_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-walletload_tests.$(OBJEXT) \
-#	wallet/test/test_test_bitcoin-group_outputs_tests.$(OBJEXT)
-##am__objects_57 = wallet/test/test_test_bitcoin-db_tests.$(OBJEXT)
+am__objects_56 = wallet/test/test_test_bitcoin-feebumper_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-psbt_wallet_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-spend_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-wallet_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-walletdb_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-wallet_crypto_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-wallet_transaction_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-coinselector_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-init_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-ismine_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-rpc_util_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-scriptpubkeyman_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-walletload_tests.$(OBJEXT) \
+	wallet/test/test_test_bitcoin-group_outputs_tests.$(OBJEXT)
+#am__objects_57 = wallet/test/test_test_bitcoin-db_tests.$(OBJEXT)
 am__objects_58 = test/test_bitcoin-addrman_tests.$(OBJEXT) \
 	test/test_bitcoin-allocator_tests.$(OBJEXT) \
 	test/test_bitcoin-amount_tests.$(OBJEXT) \
@@ -3669,7 +3669,7 @@ ACLOCAL = ${SHELL} '/Users/guinengni/code/cc/bitcoin-25.1/build-aux/missing' acl
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 ANDROID_ARCH = 
-AR = /nix/store/vwh2qqal1q101wv4jy40giavp73q0msd-clang-wrapper-16.0.6/bin/ar
+AR = /nix/store/65lhhpbfnsf9b3knd4q2l49y7107fisp-clang-wrapper-16.0.6/bin/ar
 ARFLAGS = cr
 ARM_CRC_CXXFLAGS = 
 ARM_SHANI_CXXFLAGS = 
@@ -3719,10 +3719,10 @@ CTAGS = ctags
 CXX = clang++ -std=c++17
 CXXCPP = clang++ -std=c++17 -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = 
+CXXFLAGS = -g -O2
 CYGPATH_W = echo
-DEBUG_CPPFLAGS =  -DDEBUG -DDEBUG_LOCKORDER -DDEBUG_LOCKCONTENTION -DRPC_DOC_CHECK -DABORT_ON_FAILED_ASSUME
-DEBUG_CXXFLAGS =  -O0 -g3 -ftrapv
+DEBUG_CPPFLAGS = 
+DEBUG_CXXFLAGS = 
 DEFS = -DHAVE_CONFIG_H
 DEPDIR = .deps
 DLLTOOL = false
@@ -3732,25 +3732,25 @@ DUMPBIN =
 ECHO_C = 
 ECHO_N = -n
 ECHO_T = 
-EGREP = /nix/store/zsm4xd527427rnjfnvfhvsld2n57b822-gnugrep-3.11/bin/grep -E
+EGREP = /nix/store/08nb1wjqrmcr8x0g7l1p3i8j16in3606-gnugrep-3.11/bin/grep -E
 ENABLE_EXTERNAL_SIGNER = 
 ERROR_CXXFLAGS = 
 ETAGS = etags
-EVENT_CFLAGS = -I/nix/store/lhh0vjh86whflydkvaybyplkx90f3x2v-libevent-2.1.12-dev/include
-EVENT_LIBS = -L/nix/store/pgihz8akvgfhs42ixhw80vqs0l9vlpmz-libevent-2.1.12/lib -levent
-EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/nix/store/lhh0vjh86whflydkvaybyplkx90f3x2v-libevent-2.1.12-dev/include
-EVENT_PTHREADS_LIBS = -L/nix/store/pgihz8akvgfhs42ixhw80vqs0l9vlpmz-libevent-2.1.12/lib -levent_pthreads -levent
+EVENT_CFLAGS = -I/nix/store/f43h9hn15g58bk91gsi41q35k1kd7j37-libevent-2.1.12-dev/include
+EVENT_LIBS = -L/nix/store/bcq86l52xw8xa1q8jmzm45fh7k5gr796-libevent-2.1.12/lib -levent
+EVENT_PTHREADS_CFLAGS = -D_THREAD_SAFE -I/nix/store/f43h9hn15g58bk91gsi41q35k1kd7j37-libevent-2.1.12-dev/include
+EVENT_PTHREADS_LIBS = -L/nix/store/bcq86l52xw8xa1q8jmzm45fh7k5gr796-libevent-2.1.12/lib -levent_pthreads -levent
 EXEEXT = 
 EXTENDED_FUNCTIONAL_TESTS = 
-FGREP = /nix/store/zsm4xd527427rnjfnvfhvsld2n57b822-gnugrep-3.11/bin/grep -F
+FGREP = /nix/store/08nb1wjqrmcr8x0g7l1p3i8j16in3606-gnugrep-3.11/bin/grep -F
 FILECMD = file
 GCOV = /usr/bin/gcov
 GENHTML = 
-GIT = /nix/store/q7avibx4c00h7zl3jfh3r5mc4xs6wsnj-git-2.42.0/bin/git
+GIT = /nix/store/ylm8lw53fkk4hmxaccirg67fcrwp4q6w-git-2.43.0/bin/git
 GPROF_CXXFLAGS = 
 GPROF_LDFLAGS = 
-GREP = /nix/store/zsm4xd527427rnjfnvfhvsld2n57b822-gnugrep-3.11/bin/grep
-HARDENED_CPPFLAGS = 
+GREP = /nix/store/08nb1wjqrmcr8x0g7l1p3i8j16in3606-gnugrep-3.11/bin/grep
+HARDENED_CPPFLAGS =  -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=3
 HARDENED_CXXFLAGS =  -Wstack-protector -fstack-protector-all
 HARDENED_LDFLAGS =  -Wl,-bind_at_load
 HAVE_BUILTIN_PREFETCH = 1
@@ -3764,7 +3764,7 @@ HAVE_MM_PREFETCH = 0
 HAVE_O_CLOEXEC = 1
 HAVE_STRONG_GETAUXVAL = 0
 HEXDUMP = /usr/bin/hexdump
-INSTALL = /nix/store/pzajj7gw0nazs3vzp6jld53q8ird5izr-coreutils-9.4/bin/install -c
+INSTALL = /nix/store/05f94jq5l6kfs9s3gyzj28y1v4xf6hfm-coreutils-9.4/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_NAME_TOOL = 
 INSTALL_PROGRAM = ${INSTALL}
@@ -3796,7 +3796,7 @@ MAKENSIS =
 MANIFEST_TOOL = :
 MINIUPNPC_CPPFLAGS = 
 MINIUPNPC_LIBS = 
-MKDIR_P = /nix/store/pzajj7gw0nazs3vzp6jld53q8ird5izr-coreutils-9.4/bin/mkdir -p
+MKDIR_P = /nix/store/05f94jq5l6kfs9s3gyzj28y1v4xf6hfm-coreutils-9.4/bin/mkdir -p
 MOC = 
 MOC_DEFS = -DHAVE_CONFIG_H -I$(srcdir)
 MPGEN_PREFIX = 
@@ -3808,7 +3808,7 @@ NOWARN_CXXFLAGS =  -Wno-unused-parameter -Wno-self-assign -Wno-deprecated-copy
 OBJCOPY = 
 OBJCXX = clang++ -std=c++17
 OBJCXXDEPMODE = depmode=gcc3
-OBJCXXFLAGS = 
+OBJCXXFLAGS = -g -O2
 OBJDUMP = objdump
 OBJEXT = o
 OTOOL = otool
@@ -3823,7 +3823,7 @@ PACKAGE_VERSION = 25.1.0
 PATH_SEPARATOR = :
 PIC_FLAGS = -fPIC
 PIE_FLAGS = 
-PKG_CONFIG = /nix/store/xanxf5bwj0ddd7q34jlafask4475vvpr-pkg-config-wrapper-0.29.2/bin/pkg-config
+PKG_CONFIG = /nix/store/xrxy4642194vdyq0a9cdb9d29y97drab-pkg-config-wrapper-0.29.2/bin/pkg-config
 PKG_CONFIG_LIBDIR = 
 PKG_CONFIG_PATH = 
 PTHREAD_CC = clang
@@ -3890,11 +3890,11 @@ RELDFLAGS =
 RUNTIME_LDFLAGS = 
 SANITIZER_CXXFLAGS = 
 SANITIZER_LDFLAGS = 
-SED = /nix/store/9z9k8dwhhiryr7z2pz70zca0vwa15yqc-gnused-4.9/bin/sed
+SED = /nix/store/v5mi2yzla9d240q8jfmrav754lqr3qha-gnused-4.9/bin/sed
 SET_MAKE = 
-SHELL = /nix/store/6nxav88iiz0g8m598xy643f8hhdz5kkx-bash-5.2-p21/bin/bash
-SQLITE_CFLAGS = 
-SQLITE_LIBS = 
+SHELL = /nix/store/0wzb184kckhmggq1nlvy5xk6rykp0jl1-bash-5.2-p21/bin/bash
+SQLITE_CFLAGS = -I/nix/store/2lyc1i36k8m44svph9kjm8m6cf8ymzax-sqlite-3.44.2-dev/include
+SQLITE_LIBS = -L/nix/store/p0pprkb26is5wisfaaz2cmgzg91phzhk-sqlite-3.44.2/lib -lsqlite3
 SSE41_CXXFLAGS = 
 SSE42_CXXFLAGS = 
 STRIP = strip
@@ -3928,10 +3928,10 @@ am__tar = $${TAR-tar} chof - "$$tardir"
 am__untar = $${TAR-tar} xf -
 ax_pthread_config = 
 bindir = ${exec_prefix}/bin
-build = aarch64-apple-darwin23.2.0
+build = aarch64-apple-darwin23.3.0
 build_alias = 
 build_cpu = aarch64
-build_os = darwin23.2.0
+build_os = darwin23.3.0
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -3939,10 +3939,10 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-host = aarch64-apple-darwin23.2.0
+host = aarch64-apple-darwin23.3.0
 host_alias = 
 host_cpu = aarch64
-host_os = darwin23.2.0
+host_os = darwin23.3.0
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
@@ -4000,8 +4000,8 @@ LIBSECP256K1 = secp256k1/libsecp256k1.la
 #LIBBITCOIN_ZMQ = libbitcoin_zmq.a
 LIBBITCOINCONSENSUS = libbitcoinconsensus.la
 #LIBBITCOINKERNEL = libbitcoinkernel.la
-#LIBBITCOIN_WALLET = libbitcoin_wallet.a
-#LIBBITCOIN_WALLET_TOOL = libbitcoin_wallet_tool.a
+LIBBITCOIN_WALLET = libbitcoin_wallet.a
+LIBBITCOIN_WALLET_TOOL = libbitcoin_wallet_tool.a
 LIBBITCOIN_CRYPTO = $(LIBBITCOIN_CRYPTO_BASE) $(am__append_1) \
 	$(am__append_2) $(am__append_3) $(am__append_4)
 #LIBBITCOIN_CRYPTO_SSE41 = crypto/libbitcoin_crypto_sse41.la
@@ -5011,10 +5011,10 @@ BITCOIN_TESTS = test/addrman_tests.cpp test/allocator_tests.cpp \
 	test/validationinterface_tests.cpp test/versionbits_tests.cpp \
 	test/xoroshiro128plusplus_tests.cpp $(am__append_55) \
 	$(am__append_57)
-#FUZZ_WALLET_SRC =  \
-#	wallet/test/fuzz/coinselection.cpp \
-#	wallet/test/fuzz/parse_iso8601.cpp \
-#	$(am__append_58)
+FUZZ_WALLET_SRC =  \
+	wallet/test/fuzz/coinselection.cpp \
+	wallet/test/fuzz/parse_iso8601.cpp \
+	$(am__append_58)
 test_test_bitcoin_SOURCES = $(BITCOIN_TEST_SUITE) $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
 test_test_bitcoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) \
 	$(TESTDEFS) $(BOOST_CPPFLAGS) $(EVENT_CFLAGS) $(am__append_61)

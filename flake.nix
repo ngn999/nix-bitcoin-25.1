@@ -28,6 +28,7 @@
             libtool
             pkg-config
             libevent
+            sqlite
             # 根据需要关闭的特性，添加相应的依赖
             # 比如，如果不需要钱包功能，你可以不包含 db4 等
           ];
